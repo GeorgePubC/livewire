@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/counter', \App\Livewire\Counter::class);
-Route::get('/dice-dashboard', \App\Livewire\DiceDashboard::class);
+Route::get('/', \App\Livewire\DiceDashboard::class);
