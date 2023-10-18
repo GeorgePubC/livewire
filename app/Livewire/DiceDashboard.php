@@ -16,6 +16,19 @@ class DiceDashboard extends Component
     public int $index = 1;
     public int $clickCount = 0;
 
+    public function resetDice()
+    {
+        $this->dices = [
+            [
+                'name' => 'Dice 1',
+                'value' => 2
+            ]
+        ];
+
+        $this->index = 1;
+        $this->clickCount = 0;
+    }
+
     public function render()
     {
         return view('livewire.dice-dashboard');
